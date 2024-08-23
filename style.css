@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+:root {
+    --background-color: #fff;
+    --accent: #bd4d72;
+    --black: #131313;
+    --buttons: #235992;
+}
+
+body {
+    min-height: 100vh;
+}
+
+section {
+    min-height: 100vh;
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+}
+
+/* Nabar */
+nav {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--black);
+    background-color: var(--background-color);
+    padding: 30px 50px;
+    transition: all 0.4s ease-out;
+}
+
+nav.sticky {
+    background-color: var(--background-color);
+    filter: drop-shadow(5px 5px 10px #f5e9e3);
+}
+
+.brand {
+    text-decoration: none;
+    transition: all ease-in-out 0.3s;
+    color: var(--black);
+}
+
+.brand h1 {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.accent {
+    color: var(--accent);
+}
+
+.brand:hover {
+    opacity: 0.8;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+}
+
+.menu a {
+    display: inline-block;
+    position: relative;
+    color: var(--black);
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 400;
+    border-radius: 32px;
+    background-color: var(--background-color);
+    padding: 10px;
+    transition: all 0.2s ease-out;
+}
+
+.menu a:hover {
+    background-color: var(--accent);
+    color: white;
+}
+
+.btn {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.btn-2 {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--black);
+    transition: all 0.2s ease-out;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-2 i {
+    font-size: 32px;
+    transition: all 0.2s ease-out;
+}
+
+.btn-2:hover i {
+    color: var(--accent);
+}
+
+.btn-2:hover {
+    gap: 10px;
+}
+/* Navbar End */
+
+/* Hero Section */
+.heropage {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-headlines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 750px;
+    text-align: center;
+}
+
+.hero-headlines h1 {
+    font-size: 60px;
+    font-weight: 900;
+    padding-bottom: 5px;
+}
+
+.hero-headlines p {
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.hero-headlines-buttons {
+    display: flex;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.btn-3 {
+    width: 205px;
+    height: 53px;
+    margin: 5px 5px 0px 0px;
+    background-color: var(--buttons);
+    font-size: 24px;
+    color: white;
+    border-radius: 12px;
+    border: 1px solid var(--buttons);
+    transition: all 0.2s ease-out;
+}
+
+.btn-3:hover {
+    background-color: var(--accent);
+    border: 1px solid var(--accent);
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+.btn-transparent {
+    background-color: transparent;
+    color: var(--black);
+}
+.btn-transparent:hover {
+    background-color: var(--accent);
+    color: white;
+}
+
+.hero-image {
+    display: flex;
+    margin-top: 50px;
+    z-index: auto;
+    width: 45rem;
+    height: 45rem;
+}
+/* Hero Page End */
+
+/* Requirements Page */
+.requirements-page {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin-top: 10rem;
+    overflow: hidden;
+    min-height: 80vh;
+}
+
+.requirements-img img {
+    height: 35rem;
+    width: 45rem;
+}
+
+.adoption-proc {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.adoption-proc h1 {
+    font-size: 70px;
+    font-weight: 900;
+    padding-bottom: 5px;
+    margin-right: 100px;
+}
+
+.adoption-proc p {
+    font-size: 27px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.reg-item {
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+}
+
+.reg-item div {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: solid 1px var(--black);
+    align-items: center;
+    justify-content: center;
+}
+/* Requirements Page End */
+
+/* Find More Page */
+/* .find-more {
+    margin-left: 20px;
+    margin-right: 50px;
+    min-height: 100vh;
+}
+
+.find-more-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.find-more-img {
+    display: flex;
+    flex-direction: column;
+}
+
+.find-more-img .img-1 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 42rem;
+    align-items: start;
+}
+
+.img-1 .img-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.img-2 .img-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+
+.find-more-img .img-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+}
+
+.find-more-img .img-3 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 42rem;
+}
+
+.find-more-img .img-2 h2 {
+    font-size: 50px;
+}
+
+.find-more-img .img-2 p {
+    font-size: 30px;
+    text-align: center;
+}
+
+.find-more-text h1 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 50px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.find-more-btn {
+    width: 200px;
+    height: 65px;
+    margin: 5px 5px 0px 0px;
+    background-color: var(--buttons);
+    font-size: 24px;
+    color: white;
+    border-radius: 12px;
+    border: 1px solid var(--buttons);
+    transition: all 0.2s ease-out;
+    line-height: 20px;
+    margin: 15px;
+    align-items: center;
+}
+
+.find-more-btn:hover {
+    background-color: transparent;
+    color: var(--black);
+    border: 1px solid var(--buttons);
+    transform: translateY(-3px);
+    cursor: pointer;
+} */
+
+
+
+
+
+
+
+
+/* Container for the "Find More" section */
+.find-more {
+    margin-left: 80px;
+    margin-right: 80px;
+    min-height: 100vh;
+}
+
+/* Flex container for content */
+.find-more-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container for images and text */
+.find-more-img {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for each image-item */
+.img-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px; /* Space between items */
+}
+
+/* Styles for left image */
+.img-left {
+    width: 25rem;
+    height: auto;
+    margin-left: 50px;
+}
+
+/* Styles for right image */
+.img-right {
+    width: 25rem;
+    height: auto;
+    margin-right: 50px;
+}
+
+/* Content box styles */
+.img-content {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Text styles */
+.img-content h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+.img-content p {
+    font-size: 25px;
+    text-align: center;
+}
+
+/* Style for the main text in "Find More" section */
+.find-more-text h1 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 50px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+/* Style for the button */
+.find-more-btn {
+    width: 300px;
+    height: 65px;
+    margin: 15px;
+    background-color: var(--buttons);
+    font-size: 24px;
+    color: white;
+    border: 1px solid var(--buttons);
+    transition: all 0.2s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 680px;
+}
+
+/* Button hover effect */
+.find-more-btn:hover {
+    background-color: transparent;
+    color: var(--black);
+    border: 1px solid var(--buttons);
+    letter-spacing: 1px;
+    font-weight: 600;
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+/* Find More Page End*/
+
+
+

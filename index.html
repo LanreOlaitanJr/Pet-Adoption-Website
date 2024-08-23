@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+
+    <title>Pet-Love | Animal Adoption</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <a href="index.html" class="brand">
+        <h1>Pet<b class="accent">Love</b></h1>
+      </a>
+      <div class="menu">
+        <div class="btn">
+          <i class="fas fa-times close-btn"></i>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="index.html#pets">Pets</a>
+        <a href="index.html#requirements">Requirements</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#stories">Stories</a>
+      </div>
+      <button class="btn-2" onclick="window.location.href='contact.html'">
+        <p>Contact Us</p>
+        <i class="fa-solid fa-circle-arrow-right"></i>
+      </button>
+      <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Page Section -->
+    <section class="heropage">
+      <div class="hero-headlines">
+        <h1>Find your Soul Pet Today!</h1>
+        <p>
+          Find Your New Best Friend in Our List of Loving Pets Up for Adoption.
+        </p>
+        <div class="hero-headline-buttons">
+          <button class="btn-3">Our Furbabies</button>
+          <button
+            class="btn-3 btn-transparent"
+            onclick="window.location.href='contact.html'"
+          >
+            Contact Us
+          </button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="./adopt-pet-concept_23-2148533665.avif" alt="" />
+      </div>
+    </section>
+    <!-- Hero Page Section End -->
+
+    <!-- Requirements Page -->
+    <section class="requirements-page">
+      <div class="requirements-img">
+        <img src="./cute lil dog.png" alt="" />
+      </div>
+      <div class="adoption-proc">
+        <h1>Process For Adoption</h1>
+        <p>Follow the simple steps below to find your new soul pet:</p>
+        <!-- Item 1 -->
+        <div class="reg-item">
+          <div style="background-color: #b9ff46">
+            <i class="fa-regular fa-newspaper"></i>
+          </div>
+          <p>Applying for adoption</p>
+        </div>
+        <!-- Item 2 -->
+        <div class="reg-item">
+          <div style="background-color: #fff846">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <p>A video call from us for interview</p>
+        </div>
+        <!-- Item 3 -->
+        <div class="reg-item">
+          <div style="background-color: #ff8846">
+            <i class="fa-solid fa-paw"></i>
+          </div>
+          <p>Meeting the pet in person</p>
+        </div>
+        <!-- Item 4 -->
+        <div class="reg-item">
+          <div style="background-color: #46c7ff">
+            <i class="fa-regular fa-file-zipper"></i>
+          </div>
+          <p>Signing an adoption agreement</p>
+        </div>
+        <!-- Item 5 -->
+        <div class="reg-item">
+          <div style="background-color: #4fffca">
+            <i class="fa-solid fa-handshake"></i>
+          </div>
+          <p>Congrats, you just found a match!</p>
+        </div>
+      </div>
+    </section>
+    <!-- Requirements Page End -->
+
+    <!-- Find More Page -->
+    <!-- <section class="find-more">
+      <div class="find-more-text">
+        <h1>
+          Few of many of our pets that has found their forever compasionate
+          owners...
+        </h1>
+      </div>
+      <div class="find-more-img"> -->
+    <!-- Image 1 -->
+    <!-- <div class="img-2">
+          <img src="./pet-item-2-removebg-preview.png" alt="" />
+          <div class="img2-text">
+            <h2>Little Garfield</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Sunt asperiores ab deserunt nesciunt accusantium inventore,
+              tempora sit harum doloribus dolorum laborum temporibus mollitia
+              excepturi alias blanditiis eius quia itaque.
+            </p>
+          </div>
+        </div> -->
+    <!-- Image 2 -->
+    <!-- <div class="img-3">
+          <div class="img-text">
+            <h2>Miss Pecky</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Sunt asperiores ab deserunt nesciunt accusantium inventore,
+              tempora sit harum doloribus dolorum laborum temporibus mollitia
+              excepturi <br />
+              alias blanditiis eius quia itaque.
+            </p>
+          </div>
+          <img src="./pet-item-3-removebg-preview.png" alt="" />
+        </div>
+      </div>
+      <div class="find-more-wds">
+        <h2></h2>
+        <p></p>
+        <button class="find-more-btn">Click here for more</button>
+      </div>
+    </section> -->
+
+    <section class="find-more">
+      <div class="find-more-text">
+        <h1>
+          Few of many of our pets that have found their forever compassionate
+          owners...
+        </h1>
+      </div>
+      <div class="find-more-img">
+        <!-- Image 1 with text -->
+        <div class="img-item">
+          <img
+            src="./pet-item-2-removebg-preview.png"
+            alt="Little Garfield"
+            class="img-left"
+          />
+          <div class="img-content">
+            <h2>Miss Polly</h2>
+            <p>
+              Our little Miss Polly is a feathered friend, she is vibrant,
+              intelligent, and affectionate companions who bring joy and color
+              to any home. With patience and love, Polly will flourish and
+              become a cherished member of your family.
+            </p>
+          </div>
+        </div>
+        <!-- Image 2 with text -->
+        <div class="img-item">
+          <div class="img-content">
+            <h2>Little Garfield</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
+              asperiores ab deserunt nesciunt accusantium inventore, tempora sit
+              harum doloribus dolorum laborum temporibus mollitia excepturi
+              alias blanditiis eius quia itaque.
+            </p>
+          </div>
+          <img
+            src="./pet-item-3-removebg-preview.png"
+            alt="Miss Pecky"
+            class="img-right"
+          />
+        </div>
+      </div>
+      <div class="find-more-wds">
+        <button class="find-more-btn">
+          <p>Click here for more</p>
+          <i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Find More Pet Page End -->
+
+    <!-- Link to JavaScript -->
+    <script src="app.js"></script>
+  </body>
+</html>
